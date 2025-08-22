@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCommunity Hub | Web Development Tutorials, Programming Guides & Developer Resources</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="DevCommunity Hub - Your ultimate resource for web development tutorials, programming guides, server configuration, and open source development. Learn coding best practices from industry experts.">
+    <meta name="keywords" content="web development tutorials, programming guides, developer resources, coding best practices, server setup tutorials, VPS configuration guides, open source development, tech learning resources">
+    <meta name="author" content="DevCommunity Hub">
+    <meta name="robots" content="index, follow">
+
+    <!-- Verification Tags -->
+    <meta name="google-site-verification" content="AJEup7h_AMLr5foOKgGOlZjTUVyd4KTqBcanY30cwS4" />
+    <meta name="msvalidate.01" content="2CE588F0C2D4FC0B69A67814A3917FF3" />
+
+    <!-- OpenGraph Tags -->
+    <meta property="og:title" content="DevCommunity Hub - Web Development Tutorials & Programming Resources">
+    <meta property="og:description" content="Learn web development, programming, and server management with our comprehensive tutorials, guides, and community resources for developers.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://username.github.io/devcommunity-hub">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "DevCommunity Hub",
+        "description": "A comprehensive resource hub for web development tutorials, programming guides, and developer learning resources",
+        "url": "https://username.github.io/devcommunity-hub",
+        "sameAs": [
+            "https://github.com/username/devcommunity-hub"
+        ],
+        "educationalUse": ["tutorial", "learning resource", "programming guide"],
+        "keywords": ["web development", "programming", "coding tutorials", "developer resources", "server configuration"],
+        "audience": {
+            "@type": "Audience",
+            "audienceType": "developers, programmers, students"
+        }
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__brand">
+                <span class="nav__logo">🚀 DevCommunity</span>
+                <span class="nav__subtitle">Learn. Build. Share.</span>
+            </div>
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item"><a href="#tutorials" class="nav__link">Tutorials</a></li>
+                <li class="nav__item"><a href="#resources" class="nav__link">Resources</a></li>
+                <li class="nav__item"><a href="#guides" class="nav__link">Guides</a></li>
+                <li class="nav__item"><a href="#community" class="nav__link">Community</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__badge">🎯 Open Source Learning</div>
+                <h1 class="hero__title">Learn Web Development & Programming Through Real-World Tutorials</h1>
+                <p class="hero__description">
+                    Discover comprehensive programming guides, web development tutorials, server configuration best practices, and open source development resources. Join our growing community of developers learning together.
+                </p>
+                <div class="hero__stats">
+                    <div class="stat">
+                        <span class="stat__number">150+</span>
+                        <span class="stat__label">Tutorials</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">50+</span>
+                        <span class="stat__label">Guides</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">Free</span>
+                        <span class="stat__label">Always</span>
+                    </div>
+                </div>
+                <div class="hero__cta">
+                    <a href="#tutorials" class="btn btn--primary">Start Learning</a>
+                    <a href="#resources" class="btn btn--secondary">Browse Resources</a>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="code-window">
+                    <div class="code-window__header">
+                        <div class="code-window__dots">
+                            <span class="dot dot--red"></span>
+                            <span class="dot dot--yellow"></span>
+                            <span class="dot dot--green"></span>
+                        </div>
+                        <span class="code-window__title">welcome.js</span>
+                    </div>
+                    <div class="code-window__body">
+                        <code class="code-snippet">
+<span class="code-comment">// Welcome to DevCommunity!</span>
+<span class="code-keyword">const</span> <span class="code-variable">skills</span> = [
+  <span class="code-string">'JavaScript'</span>,
+  <span class="code-string">'Python'</span>, 
+  <span class="code-string">'React'</span>,
+  <span class="code-string">'Node.js'</span>
+];
+
+<span class="code-function">function</span> <span class="code-name">startLearning</span>() {
+  <span class="code-keyword">return</span> <span class="code-string">'Ready to code! 🚀'</span>;
+}
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorials Section -->
+    <section id="tutorials" class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Web Development Tutorials & Programming Guides</h2>
+                <p class="section__subtitle">
+                    Master modern web development with our step-by-step tutorials covering frontend, backend, DevOps, and full-stack development practices.
+                </p>
+            </div>
+
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <div class="tutorial-card__icon">💻</div>
+                    <h3 class="tutorial-card__title">Frontend Development Mastery</h3>
+                    <p class="tutorial-card__description">
+                        Learn modern JavaScript, React, Vue.js, and responsive web design through practical projects. Our comprehensive tutorials cover everything from HTML5 semantics to advanced CSS animations and state management.
+                    </p>
+                    <ul class="tutorial-card__topics">
+                        <li>JavaScript ES6+ Fundamentals</li>
+                        <li>React Hooks & Component Patterns</li>
+                        <li>CSS Grid & Flexbox Mastery</li>
+                        <li>Performance Optimization Techniques</li>
+                    </ul>
+                    <div class="tutorial-card__meta">
+                        <span class="meta-tag">Beginner Friendly</span>
+                        <span class="meta-tag">25 Lessons</span>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-card__icon">⚙️</div>
+                    <h3 class="tutorial-card__title">Backend & Server Configuration</h3>
+                    <p class="tutorial-card__description">
+                        Master server-side development with Node.js, Python, database design, and learn professional VPS setup and server administration. Get hands-on experience with <a href="https://tech.grahammiranda.com" class="inline-link" target="_blank" rel="noopener">advanced server management techniques</a> used in production environments.
+                    </p>
+                    <ul class="tutorial-card__topics">
+                        <li>Node.js REST API Development</li>
+                        <li>Docker Containerization Guide</li>
+                        <li>VPS Setup & Security Hardening</li>
+                        <li>Database Optimization Strategies</li>
+                    </ul>
+                    <div class="tutorial-card__meta">
+                        <span class="meta-tag">Intermediate</span>
+                        <span class="meta-tag">35 Lessons</span>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-card__icon">🌐</div>
+                    <h3 class="tutorial-card__title">Full-Stack Development Journey</h3>
+                    <p class="tutorial-card__description">
+                        Combine frontend and backend skills to build complete web applications. Learn deployment strategies, DevOps practices, and enterprise-grade solutions with guidance from <a href="https://www.grahammiranda.com" class="inline-link" target="_blank" rel="noopener">professional IT consulting experts</a>.
+                    </p>
+                    <ul class="tutorial-card__topics">
+                        <li>MERN Stack Application Development</li>
+                        <li>CI/CD Pipeline Setup</li>
+                        <li>Cloud Deployment Strategies</li>
+                        <li>Scalable Architecture Patterns</li>
+                    </ul>
+                    <div class="tutorial-card__meta">
+                        <span class="meta-tag">Advanced</span>
+                        <span class="meta-tag">40 Lessons</span>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-card__icon">🔧</div>
+                    <h3 class="tutorial-card__title">DevOps & Infrastructure</h3>
+                    <p class="tutorial-card__description">
+                        Learn modern DevOps practices, infrastructure as code, monitoring, and enterprise network solutions. Explore <a href="https://nexplus.grahammiranda.network" class="inline-link" target="_blank" rel="noopener">enterprise-grade infrastructure solutions</a> for scalable business applications.
+                    </p>
+                    <ul class="tutorial-card__topics">
+                        <li>Kubernetes Orchestration</li>
+                        <li>Terraform Infrastructure Management</li>
+                        <li>Monitoring & Logging Systems</li>
+                        <li>Security Best Practices</li>
+                    </ul>
+                    <div class="tutorial-card__meta">
+                        <span class="meta-tag">Expert</span>
+                        <span class="meta-tag">30 Lessons</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="section section--alt">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Developer Resources & Tools</h2>
+                <p class="section__subtitle">
+                    Curated collection of development tools, code snippets, cheat sheets, and essential resources to boost your productivity and learning.
+                </p>
+            </div>
+
+            <div class="resources-grid">
+                <div class="resource-category">
+                    <h3 class="resource-category__title">🛠️ Development Tools</h3>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <h4 class="resource-item__name">VS Code Extensions Pack</h4>
+                            <p class="resource-item__desc">Essential extensions for productive web development</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4 class="resource-item__name">API Testing Suite</h4>
+                            <p class="resource-item__desc">Postman collections and testing strategies</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4 class="resource-item__name">Performance Monitoring</h4>
+                            <p class="resource-item__desc">Tools for measuring and optimizing app performance</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resource-category">
+                    <h3 class="resource-category__title">📚 Learning Materials</h3>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <h4 class="resource-item__name">Algorithm Cheat Sheets</h4>
+                            <p class="resource-item__desc">Quick reference for common algorithms and data structures</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4 class="resource-item__name">CSS Grid Generator</h4>
+                            <p class="resource-item__desc">Interactive tool for creating responsive grid layouts</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4 class="resource-item__name">RegEx Builder</h4>
+                            <p class="resource-item__desc">Visual regex builder with explanation and testing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resource-category">
+                    <h3 class="resource-category__title">🏗️ Project Templates</h3>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <h4 class="resource-item__name">React Starter Kit</h4>
+                            <p class="resource-item__desc">Production-ready React template with TypeScript</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4 class="resource-item__name">Node.js API Boilerplate</h4>
+                            <p class="resource-item__desc">Express.js template with authentication and testing</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4 class="resource-item__name">Full-Stack Templates</h4>
+                            <p class="resource-item__desc">Complete MERN, MEAN, and JAMstack starters</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resource-category">
+                    <h3 class="resource-category__title">☁️ Deployment Guides</h3>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <h4 class="resource-item__name">Cloud Platform Comparison</h4>
+                            <p class="resource-item__desc">AWS vs Azure vs Google Cloud for developers</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4 class="resource-item__name">CI/CD Pipeline Templates</h4>
+                            <p class="resource-item__desc">GitHub Actions and GitLab CI configurations</p>
+                        </div>
+                        <div class="resource-item">
+                            <h4 class="resource-item__name">Monitoring Setup</h4>
+                            <p class="resource-item__desc">Application and infrastructure monitoring solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guides Section -->
+    <section id="guides" class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Comprehensive Programming Guides & Best Practices</h2>
+                <p class="section__subtitle">
+                    In-depth guides covering software development lifecycle, coding standards, architecture patterns, and industry best practices for professional developers.
+                </p>
+            </div>
+
+            <div class="guides-grid">
+                <div class="guide-card featured">
+                    <div class="guide-card__header">
+                        <span class="guide-card__badge">Featured Guide</span>
+                        <h3 class="guide-card__title">Complete Server Setup & Management</h3>
+                    </div>
+                    <div class="guide-card__content">
+                        <p class="guide-card__description">
+                            Master professional server administration from initial VPS setup to production monitoring. Learn security hardening, performance optimization, and automated backup strategies used by <a href="https://www.grahammiranda.network" class="inline-link" target="_blank" rel="noopener">enterprise network administrators</a>.
+                        </p>
+                        <div class="guide-card__features">
+                            <div class="feature">✅ Ubuntu 22.04 LTS Setup</div>
+                            <div class="feature">🔒 Security Hardening Checklist</div>
+                            <div class="feature">⚡ Performance Optimization</div>
+                            <div class="feature">📊 Monitoring & Alerting</div>
+                            <div class="feature">🔄 Automated Backups</div>
+                            <div class="feature">🌐 SSL Certificate Management</div>
+                        </div>
+                    </div>
+                    <div class="guide-card__meta">
+                        <span class="difficulty difficulty--intermediate">Intermediate</span>
+                        <span class="read-time">45 min read</span>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <h3 class="guide-card__title">Modern JavaScript Development</h3>
+                    <p class="guide-card__description">
+                        Comprehensive guide to ES6+ features, async programming, module systems, and modern JavaScript development workflows for building scalable applications.
+                    </p>
+                    <div class="guide-card__tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">ES6+</span>
+                        <span class="tag">Async/Await</span>
+                        <span class="tag">Modules</span>
+                    </div>
+                    <div class="guide-card__meta">
+                        <span class="difficulty difficulty--beginner">Beginner</span>
+                        <span class="read-time">30 min read</span>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <h3 class="guide-card__title">Database Design & Optimization</h3>
+                    <p class="guide-card__description">
+                        Learn relational database design principles, query optimization, indexing strategies, and NoSQL alternatives for modern web applications.
+                    </p>
+                    <div class="guide-card__tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Indexing</span>
+                        <span class="tag">Performance</span>
+                    </div>
+                    <div class="guide-card__meta">
+                        <span class="difficulty difficulty--intermediate">Intermediate</span>
+                        <span class="read-time">40 min read</span>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <h3 class="guide-card__title">API Design & Documentation</h3>
+                    <p class="guide-card__description">
+                        Best practices for designing RESTful APIs, GraphQL implementations, authentication strategies, and comprehensive API documentation.
+                    </p>
+                    <div class="guide-card__tags">
+                        <span class="tag">REST</span>
+                        <span class="tag">GraphQL</span>
+                        <span class="tag">Auth</span>
+                        <span class="tag">OpenAPI</span>
+                    </div>
+                    <div class="guide-card__meta">
+                        <span class="difficulty difficulty--intermediate">Intermediate</span>
+                        <span class="read-time">35 min read</span>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <h3 class="guide-card__title">Testing Strategies & TDD</h3>
+                    <p class="guide-card__description">
+                        Comprehensive testing approach including unit tests, integration tests, e2e testing, and test-driven development practices for reliable software.
+                    </p>
+                    <div class="guide-card__tags">
+                        <span class="tag">Jest</span>
+                        <span class="tag">Cypress</span>
+                        <span class="tag">TDD</span>
+                        <span class="tag">Coverage</span>
+                    </div>
+                    <div class="guide-card__meta">
+                        <span class="difficulty difficulty--advanced">Advanced</span>
+                        <span class="read-time">50 min read</span>
+                    </div>
+                </div>
+
+                <div class="guide-card">
+                    <h3 class="guide-card__title">Container Orchestration</h3>
+                    <p class="guide-card__description">
+                        Master Docker containerization and Kubernetes orchestration for scalable application deployment and microservices architecture.
+                    </p>
+                    <div class="guide-card__tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Microservices</span>
+                        <span class="tag">DevOps</span>
+                    </div>
+                    <div class="guide-card__meta">
+                        <span class="difficulty difficulty--expert">Expert</span>
+                        <span class="read-time">60 min read</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="section section--alt">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Join the Developer Community</h2>
+                <p class="section__subtitle">
+                    Connect with fellow developers, share knowledge, contribute to open source projects, and accelerate your learning through collaboration.
+                </p>
+            </div>
+
+            <div class="community-grid">
+                <div class="community-card">
+                    <div class="community-card__icon">💬</div>
+                    <h3 class="community-card__title">Discussion Forums</h3>
+                    <p class="community-card__description">
+                        Ask questions, share solutions, and participate in technical discussions with experienced developers from around the world.
+                    </p>
+                    <div class="community-card__stats">
+                        <span>2.5k+ Members</span>
+                        <span>500+ Topics</span>
+                    </div>
+                </div>
+
+                <div class="community-card">
+                    <div class="community-card__icon">🎯</div>
+                    <h3 class="community-card__title">Code Challenges</h3>
+                    <p class="community-card__description">
+                        Weekly coding challenges, algorithm problems, and project-based learning to sharpen your programming skills and portfolio.
+                    </p>
+                    <div class="community-card__stats">
+                        <span>50+ Challenges</span>
+                        <span>1.2k+ Solutions</span>
+                    </div>
+                </div>
+
+                <div class="community-card">
+                    <div class="community-card__icon">🤝</div>
+                    <h3 class="community-card__title">Open Source Contributions</h3>
+                    <p class="community-card__description">
+                        Discover beginner-friendly open source projects, learn Git workflows, and make meaningful contributions to the developer ecosystem.
+                    </p>
+                    <div class="community-card__stats">
+                        <span>25+ Projects</span>
+                        <span>300+ Contributors</span>
+                    </div>
+                </div>
+
+                <div class="community-card">
+                    <div class="community-card__icon">🎓</div>
+                    <h3 class="community-card__title">Mentorship Program</h3>
+                    <p class="community-card__description">
+                        Connect with experienced developers for guidance, career advice, and personalized learning paths. Get professional insights from <a href="https://www.grahammiranda.com" class="inline-link" target="_blank" rel="noopener">industry consultants</a>.
+                    </p>
+                    <div class="community-card__stats">
+                        <span>50+ Mentors</span>
+                        <span>200+ Mentees</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h3 class="cta-section__title">Ready to Level Up Your Development Skills?</h3>
+                <p class="cta-section__text">
+                    Join thousands of developers learning modern web development, exploring new technologies, and building amazing projects together. Start your journey today!
+                </p>
+                <div class="cta-buttons">
+                    <a href="#tutorials" class="btn btn--primary">Start Learning Now</a>
+                    <a href="https://github.com" class="btn btn--secondary" target="_blank" rel="noopener">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h4 class="footer__title">🚀 DevCommunity Hub</h4>
+                    <p class="footer__text">
+                        Empowering developers worldwide with comprehensive tutorials, programming guides, and community-driven learning resources.
+                    </p>
+                    <div class="footer__social">
+                        <a href="https://github.com" class="social-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__title">Learning Paths</h4>
+                    <ul class="footer__list">
+                        <li><a href="#tutorials" class="footer__link">Frontend Development</a></li>
+                        <li><a href="#tutorials" class="footer__link">Backend Development</a></li>
+                        <li><a href="#tutorials" class="footer__link">Full-Stack Journey</a></li>
+                        <li><a href="#tutorials" class="footer__link">DevOps & Infrastructure</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__title">Resources</h4>
+                    <ul class="footer__list">
+                        <li><a href="#resources" class="footer__link">Development Tools</a></li>
+                        <li><a href="#resources" class="footer__link">Code Templates</a></li>
+                        <li><a href="#guides" class="footer__link">Best Practices</a></li>
+                        <li><a href="#community" class="footer__link">Community Forum</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__title">Expert Network</h4>
+                    <ul class="footer__list">
+                        <li><a href="https://www.grahammiranda.com" class="footer__link" target="_blank" rel="noopener">Professional IT Consulting</a></li>
+                        <li><a href="https://tech.grahammiranda.com" class="footer__link" target="_blank" rel="noopener">Advanced Technical Tutorials</a></li>
+                        <li><a href="https://nexplus.grahammiranda.network" class="footer__link" target="_blank" rel="noopener">Enterprise Solutions</a></li>
+                        <li><a href="https://www.grahammiranda.network" class="footer__link" target="_blank" rel="noopener">Network Infrastructure</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    <p>&copy; 2025 DevCommunity Hub. Open source and community driven.</p>
+                </div>
+                <div class="footer__links">
+                    <a href="#" class="footer__link">Code of Conduct</a>
+                    <a href="#" class="footer__link">Contributing</a>
+                    <a href="#" class="footer__link">License</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
